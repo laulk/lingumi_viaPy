@@ -39,7 +39,8 @@ Some test cases i have tried :
 Final notes:
 
 	The algorithm used mostly implemented python's timsort,
-	the code is far from elegant, given more time and focus could definitely take into account data sets that range in the thousands. the basic skeleton of the code is just from thinking about the simplest way to implement this when manipulating lists with multiple data types, something that was beyond me in terms of C#.
+	the code is far from elegant, given more time and focus could definitely take into account data sets that range in the thousands.
+	the basic skeleton of the code is just from thinking about the simplest way to implement this when manipulating lists with multiple data types, something that was beyond me in terms of C#.
 
 
 
