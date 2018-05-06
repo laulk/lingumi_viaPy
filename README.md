@@ -36,6 +36,11 @@ Some test cases i have tried :
 	sticker2 was learned previously, latest lesson only learned sticker 1 & 5 but will still print your collected stickers.
 
 
+Final notes:
+
+	The algorithm used mostly implemented python's timsort,
+	the code is far from elegant, given more time and focus could definitely take into account data sets that range in the thousands. the basic skeleton of the code is just from thinking about the simplest way to implement this when manipulating lists with multiple data types, something that was beyond me in terms of C#.
+
 
 
 
