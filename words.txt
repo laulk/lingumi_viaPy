@@ -1,0 +1,10 @@
+﻿
+Apple WordSticker1 0 False
+Bubble WordSticker2 0 False
+Cuddle WordSticker3 0 False
+Doodle WordSticker4 0 False
+Edible WordSticker5 0 False
+Fiddle WordSticker6 0 False
+Gut WordSticker7 0 False
+Hut WordSticker8 0 False
+Ice WordSticker9 0 False
