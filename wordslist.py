@@ -1,5 +1,5 @@
 import sys
-
+import re
 #extremely barebones .py file for lingumi challenge
 
 #list of lists of available words with multiple type values "word string", "id string", "number of times learned Int", "has already colelcted Bool"
@@ -24,15 +24,22 @@ Words = [["apple", "sticker1", 0, False],
 
 
 #List of learned words is always assumed to be sorted in ascending order if not, sorted(Learned) sorts the strings by ascending
-Learned = ["sticker1","sticker1"]
+Learned = ["sticker10","sticker1","sticker5"]
 
 
 #word_set= set(map(tuple, Words))			dont need this
 #learned_set = set(map(tuple, Learned))		dont need this either
 
+#function sorts alphanumerical values -ID string is alphanumerical hence beyond sticker9, sort() function would not work to sort learned words
+def sort_alphaNumerical( l ):
+	convert = lambda text: int(text) if text.isdigit() else text
+	alphanum_key = lambda key: [convert(c) for c in re.split('([0-9]+)', key) ]
+	return sorted(l, key = alphanum_key)
+
+
 if Learned != 0:	#checks if you've 'learned' anything in the previous lesson
 
-	Learned = sorted(Learned) #sorts learned strings in ascending order
+	Learned = sort_alphaNumerical(Learned) #sorts learned strings in ascending order
 	indexW =0					#indexes which word & which sticker is being compared during the loop
 	indexS = 0
 
